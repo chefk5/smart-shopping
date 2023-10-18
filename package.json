@@ -58,5 +58,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "_comment": "--max-warnings 0 please return"
 }
