@@ -18,7 +18,8 @@
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",
     "jest/valid-expect": "error",
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": ["error", { "ignore": ["navigation"] }]
   },
   "settings": {
     "react": {
