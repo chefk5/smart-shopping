@@ -11,32 +11,12 @@ const Home = () => {
   const shelfItems = useSelector((state: RootState) => state.shelf);
 
   const dispatch = useDispatch();
-  // const items = [
-  //   { name: "Item 1" },
-  //   { name: "Item 2" },
-  //   { name: "Item 3" },
-  //   { name: "Item 4" }, // Add more items here
-  //   { name: "Item 5" },
-  // ];
 
   return (
     <View>
-      {shelfItems.map((item, index) => (
+      {shelfItems.items.map((item, index) => (
         <Counter index={index} item={item} key={index} />
       ))}
-      <Button
-        aria-label="Increment value"
-        onPress={() => dispatch(increment())}
-      >
-        Increment
-      </Button>
-      <Text>{count}</Text>
-      <Button
-        aria-label="Decrement value"
-        onPress={() => dispatch(decrement())}
-      >
-        Decrement
-      </Button>
     </View>
   );
 };
